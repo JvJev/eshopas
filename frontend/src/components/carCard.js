@@ -56,9 +56,7 @@ export default function CarCard() {
               <p>{product.name}</p>
             </Link>
             <p>{product.description}</p>
-            <span>
-              {product.category}
-            </span>
+            <span>{product.category}</span>
             <p>
               <strong>{product.price}</strong>
             </p>

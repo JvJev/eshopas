@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      id: 1,
+      id: '1',
       category: 'clothes',
       name: 'Sponge',
       year: 2010,
@@ -10,10 +10,10 @@ const data = {
       price: 5,
       image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5pJ48x4DZnhZQLTOIzyvdHne2LDvBYv4JaWUfkME5ESsfAm8V2bOknm2G4Gtbu6smd-8&usqp=CAU',
-      description: 'jlsdnjndsljnflkmnlknflknflkjvgnfjnvjlfnflknvfklnvflkvnflkvnfkvn',
+      description: 'jln',
     },
     {
-      id: 2,
+      id: '2',
       category: 'clothes',
       name: 'Audi',
       year: 2010,
@@ -25,7 +25,7 @@ const data = {
       description: 'SMTH',
     },
     {
-      id: 3,
+      id: '3',
       category: 'clothes',
       name: 'Audi',
       year: 2010,
@@ -37,7 +37,7 @@ const data = {
       description: 'SMTH',
     },
     {
-      id: 4,
+      id: '4',
       category: 'clothes',
       name: 'Audi',
       year: 2010,

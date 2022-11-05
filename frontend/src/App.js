@@ -4,14 +4,25 @@ import CarCard from './components/carCard';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
+import Container from 'react-bootstrap/esm/Container';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage></HomePage>}></Route>
-        <Route path='/product/:slug' element={<ProductPage></ProductPage>}></Route>
-      </Routes>
+      <div className="d-flex flex-column site-container full-width">
+        <Container>
+          <Routes>
+            <Route path="/" element={<HomePage></HomePage>}></Route>
+            <Route
+              path="/product/:id"
+              element={<ProductPage></ProductPage>}
+            ></Route>
+          </Routes>
+        </Container>
+        <footer>
+          <div className="text-center">All rights reserved</div>
+        </footer>
+      </div>
     </BrowserRouter>
   );
 }

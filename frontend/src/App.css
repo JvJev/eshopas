@@ -51,3 +51,12 @@
   border: 1px black solid;
   border-radius: 10px;
 }
+
+
+.bg-blue{
+  background-color: blue;
+}
+.full-with{
+  width: 100vw;
+  flex: 1;
+}
