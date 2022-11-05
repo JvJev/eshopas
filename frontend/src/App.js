@@ -9,8 +9,8 @@ import Container from 'react-bootstrap/esm/Container';
 function App() {
   return (
     <BrowserRouter>
-      <div className="d-flex flex-column site-container full-width">
-        <Container>
+      <div className="d-flex flex-column site-container">
+        <Container className='max-height'>
           <Routes>
             <Route path="/" element={<HomePage></HomePage>}></Route>
             <Route
@@ -24,7 +24,7 @@ function App() {
         </footer>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

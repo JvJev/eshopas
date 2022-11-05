@@ -37,7 +37,7 @@
   }
 }
 
-.productSection{
+.productSection {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
@@ -45,18 +45,32 @@
   justify-content: center;
 }
 
-.productsCard{
+.productsCard {
   background-color: blanchedalmond;
   padding: 1rem;
   border: 1px black solid;
   border-radius: 10px;
 }
 
-
-.bg-blue{
+.bg-blue {
   background-color: blue;
 }
-.full-with{
+.full-width {
   width: 100vw;
-  flex: 1;
+}
+.max-height {
+  min-height: 100vh;
+}
+
+.single-product-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.image-cutomClass {
+  width: 100%;
+}
+.margin-Auto{
+  margin: auto;
 }

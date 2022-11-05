@@ -41,7 +41,7 @@ export default function CarCard() {
   }, []);
 
   return (
-    <div className="productSection">
+    <div className="productSection ">
       {loading ? (
         <div>Loading please wait...</div>
       ) : error ? (
