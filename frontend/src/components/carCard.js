@@ -3,7 +3,6 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import logger from 'use-reducer-logger';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -19,7 +18,7 @@ const reducer = (state, action) => {
 };
 
 export default function CarCard() {
-  const [{ loading, error, products }, dispach] = useReducer(logger(reducer), {
+  const [{ loading, error, products }, dispach] = useReducer(reducer, {
     products: [],
     loading: true,
     error: '',
@@ -58,9 +57,7 @@ export default function CarCard() {
             </Link>
             <p>{product.description}</p>
             <span>
-              {product.fuelType}
-              {product.year}
-              {product.color}
+              {product.category}
             </span>
             <p>
               <strong>{product.price}</strong>

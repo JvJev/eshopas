@@ -2,6 +2,7 @@ const data = {
   products: [
     {
       id: 1,
+      category: 'clothes',
       name: 'Sponge',
       year: 2010,
       color: 'red',
@@ -13,6 +14,7 @@ const data = {
     },
     {
       id: 2,
+      category: 'clothes',
       name: 'Audi',
       year: 2010,
       color: 'red',
@@ -24,6 +26,7 @@ const data = {
     },
     {
       id: 3,
+      category: 'clothes',
       name: 'Audi',
       year: 2010,
       color: 'red',
@@ -35,6 +38,7 @@ const data = {
     },
     {
       id: 4,
+      category: 'clothes',
       name: 'Audi',
       year: 2010,
       color: 'red',
