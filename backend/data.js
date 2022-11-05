@@ -2,14 +2,14 @@ const data = {
   products: [
     {
       id: 1,
-      name: 'Audi',
+      name: 'Sponge',
       year: 2010,
       color: 'red',
       fuelType: 'diesel',
-      price: 5000,
+      price: 5,
       image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQWOYEtZ70M7UboT7MIZBoQIWYMdgtkpqxA&usqp=CAU',
-      description: 'SMTH',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5pJ48x4DZnhZQLTOIzyvdHne2LDvBYv4JaWUfkME5ESsfAm8V2bOknm2G4Gtbu6smd-8&usqp=CAU',
+      description: 'jlsdnjndsljnflkmnlknflknflkjvgnfjnvjlfnflknvfklnvflkvnflkvnfkvn',
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const data = {
       fuelType: 'diesel',
       price: 5000,
       image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQWOYEtZ70M7UboT7MIZBoQIWYMdgtkpqxA&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBI-GTbcW8MA983JTm9RtbWDTNoKg9dNWki-wkDVncxI6BTbROMN_G0PH7gPMsBfxcJss&usqp=CAU',
       description: 'SMTH',
     },
     {
