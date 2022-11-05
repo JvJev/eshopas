@@ -74,3 +74,14 @@
 .margin-Auto{
   margin: auto;
 }
+.small-container{
+  max-width: 600px;
+}
+
+.main-form-container{
+  width: 600px;
+  margin-top: 100px;
+  border: 3px solid green;
+  border-radius: 10px;
+  background-color: rgb(222, 255, 255);
+}

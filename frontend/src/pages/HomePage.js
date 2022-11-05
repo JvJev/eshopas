@@ -13,6 +13,13 @@ export default function HomePage() {
           <Container >
             <LinkContainer to="/">
               <NavBar.Brand >Jev's e-shop</NavBar.Brand>
+            
+            </LinkContainer>
+          </Container>
+          <Container >
+            <LinkContainer to="/signin">
+              <NavBar.Brand >Sign In</NavBar.Brand>
+            
             </LinkContainer>
           </Container>
         </NavBar>
@@ -23,3 +30,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+
