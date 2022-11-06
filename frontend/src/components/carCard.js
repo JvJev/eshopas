@@ -30,6 +30,7 @@ export default function CarCard() {
       dispach({ type: 'FETCH_REQUEST' });
       try {
         const result = await axios.get('/api/products');
+
         dispach({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
         dispach({ type: 'FETCH_FAIL', payload: err.message });
@@ -39,7 +40,6 @@ export default function CarCard() {
     };
     fetchData();
   }, []);
-
   return (
     <div className="productSection ">
       {loading ? (
@@ -47,12 +47,12 @@ export default function CarCard() {
       ) : error ? (
         <div>{error}</div>
       ) : (
-        products.map((product) => (
-          <div className="productsCard" key={product.id}>
-            <Link to={`product/${product.id}`}>
+        products.createdProducts.map((product) => (
+          <div className="productsCard" key={product._id}>
+            <Link to={`product/${product._id}`}> 
               <img src={product.image} alt={product.name} />
             </Link>
-            <Link to={`product/${product.id}`}>
+            <Link to={`product/${product._id}`}>
               <p>{product.name}</p>
             </Link>
             <p>{product.description}</p>

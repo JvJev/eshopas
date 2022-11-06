@@ -27,7 +27,8 @@ const reducer = (state, action) => {
 
 export default function ProductPage() {
   const params = useParams();
-  const { id } = params;
+  const { _id } = params;
+  console.log(_id)
 
   const [{ loading, error, product }, dispach] = useReducer(reducer, {
     product: [],
@@ -40,14 +41,14 @@ export default function ProductPage() {
     const fetchData = async () => {
       dispach({ type: 'FETCH_REQUEST' });
       try {
-        const result = await axios.get(`/api/products/id/${id}`);
-        dispach({ type: 'FETCH_SUCCESS', payload: result.data });
+        const result = await axios.get(`/api/products`);
+        dispach({ type: 'FETCH_SUCCESS', payload: result }); console.log(result)
       } catch (err) {
         dispach({ type: 'FETCH_FAIL', payload: err.message });
       }
     };
     fetchData();
-  }, [id]);
+  }, [_id]) ;
 
   return loading ? (
     <div> Loading...</div>
@@ -62,6 +63,7 @@ export default function ProductPage() {
             className="image-cutomClass"
             src={product.image}
             alt={product.name}
+            
           ></img>
         </Col>
         <Col md={8}>
